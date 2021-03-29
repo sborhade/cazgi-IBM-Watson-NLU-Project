@@ -101,9 +101,9 @@ app.get("/text/emotion", (req, res) => {
     const analyzeParams = {
         'text': req.query.text,
         'features': {
-            //   'entities': {
-            //         'emotion': true,
-            //     },
+            'entities': {
+                'emotion': true,
+            },
             keywords: {
                 'emotion': true
                 , limit: 1
@@ -131,6 +131,9 @@ app.get("/text/sentiment", (req, res) => {
     const analyzeParams = {
         'text': req.query.text,
         'features': {
+            'entities': {
+                'sentiment': true,
+            },
             'keywords': {
                 'sentiment': true,
                 'limit': 1
