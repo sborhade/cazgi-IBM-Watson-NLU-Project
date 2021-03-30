@@ -1,6 +1,6 @@
 ---
 applications:
-- path: .
+- path: https://sandeep-96k-sentiment-analyzer-delightful-kudu-nx.eu-gb.mybluemix.net/
   name: sandeep-96k-sentiment-analyzer #change to be unique in IBM Cloud
   buildpack: sdk-for-nodejs
   memory: 256M
